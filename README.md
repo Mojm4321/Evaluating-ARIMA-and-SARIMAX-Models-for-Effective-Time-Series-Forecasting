@@ -20,6 +20,7 @@ The ARIMA model is imported and defined to analyse the time series data, with th
 
 ### Interpretation of (ARIMA-1,1,1) SARIMAX results
 The autoregressive coefficient is very low and insignificant, illustrating that the lagged values don’t contribute much to the overall predictions. Furthermore, the AIC, BIC and MSE values suggest that the model has a poor fit because a good model would minimise these values, the values in the diagram are high, which indicates the ARIMA (1,1,1) specification is struggling to capture any underlying patterns in the data, which can result in poor forecast accuracy. Also, the high signma2 (residual variance) illustrates that the model’s predictions deviate significantly from the actual values.
+
 ![Diagram 5](https://github.com/Mojm4321/Evaluating-ARIMA-and-SARIMAX-Models-for-Effective-Time-Series-Forecasting/blob/main/Diagram%205%20ARIMA.png)
 
 The number of forecast steps is set to 90 days to forecast future values. Using the fitted ARIMA model, predictions are generated starting from the end of the time series for these 90 days. Another date range is created, beginning from the day immediately following the last observed date and extending for the forecast period.
@@ -38,7 +39,9 @@ By switching to ARIMA (2,1,4), the model considered more past values (p = 2) and
 
 ## Model Evaluation: ARIMA with Different Orders
 The evaluation of different ARIMA model configurations was completed by fitting each model to the time series data and calculating the mean squared error (MSE) of their predictions. Lower MSE values indicate a better fit to the data. The ARIMA model with parameters (2,1,4) achieved the lowest MSE of 457.88, making it the most accurate model for this dataset. Models with parameters (1,1,2) and (2,1,2) also performed well, with MSE values of 487.85 and 459.29, respectively. In contrast, the model with parameters (1,2,1) had the highest MSE, indicating the poorest fit. To summarise, the (2,1,4) model provided the best performance in terms of predictive accuracy among the configurations tested.
+
 ![Diagram 11](https://github.com/Mojm4321/Evaluating-ARIMA-and-SARIMAX-Models-for-Effective-Time-Series-Forecasting/blob/main/Diagram%2011%20ARIMA.png)
+
 ![Diagram 12](https://github.com/Mojm4321/Evaluating-ARIMA-and-SARIMAX-Models-for-Effective-Time-Series-Forecasting/blob/main/Diagram%2012%20ARIMA.png)
 
 ## Seasonal ARIMA (SARIMAX) Model Fitting and Summary
