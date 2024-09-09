@@ -1,4 +1,4 @@
-# Evaluating ARIMA and SARIMAX Models for Effective Time Series Forecasting By Jolly Madamedon
+# (Python) Evaluating ARIMA and SARIMAX Models for Effective Time Series Forecasting By Jolly Madamedon 
 
 ## Introduction
 This report evaluates the forecasting performance of ARIMA and SARIMAX models in time series analysis. Leveraging historical data, the aim is to predict future trends while assessing the models using the Mean Squared Error (MSE) metric. Also, the SARIMAX model is applied to account for both non-seasonal and seasonal paterns within the dataset.
